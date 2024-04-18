@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client profile</title>
+</head>
+<body>
+    <h1><%=client.name%>'s Chart</h1>
+    <hr>
+    Name : <%=client.name %><br>
+    Age : <%= client.age%> <br>
+    Room : <%= client.room%><br>
+    Medication : <%if(client.medication == true){%>Meds already admnistered!<%} else {%>No meds yet!<%}%>
+    
+
+<br>
+<br>
+<br>
+<a href="/clients">Back to HomePage</a>
+</body>
+</html>

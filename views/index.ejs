@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+</head>
+<body>
+    <h1>Residents Page</h1>
+    <ul>
+    <%for(let i = 0; i < individuals.length; i++){%>
+    <li>
+    <a href="/clients/<%=i; %>"><%=individuals[i].name%></a>
+    </li>
+    
+    <%}%>
+    </ul>
+    <hr>
+    <a href="/clients/new">Create Entity</a>
+</body>
+</html>
